@@ -58,11 +58,11 @@ h2 { line-height: 46px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--navy); }
 
 /* #hero */
-.hero { position: relative; overflow: hidden; background: var(--bg-blue); padding: 231px 0; }
-.hero .container { position: relative; z-index: 1; pointer-events: none; }
-.hero-text { display: flex; flex-direction: column; gap: 24px; max-width: 660px; pointer-events: auto; }
+.hero { position: relative; overflow: hidden; background: var(--bg-blue); padding: 190px 0 244px; }
+.hero .container { position: relative; z-index: 1; }
+.hero-text { display: flex; flex-direction: column; gap: 32px; max-width: 660px; }
 .hero-text .lead { max-width: 603px; }
-.hero .buttons { padding-top: 12px; }
+.hero .buttons { padding-top: 16px; }
 .badges { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 16px; line-height: 24px; }
 .badges li { display: flex; align-items: center; gap: 8px; }
 .hero-media { position: absolute; top: 0; bottom: 0; left: calc(50% - 240px); right: 0; }
@@ -157,9 +157,7 @@ h2 { line-height: 46px; }
 /* .footer */
 .footer { border-top: 1px solid var(--line); padding: 56px 0; }
 .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 36px; font-size: 16px; line-height: 24px; color: var(--text-muted); }
-.footer-links a:hover { color: var(--blue); }
-.copyright { margin-top: 24px; font-size: 16px; line-height: 24px; font-weight: 300; color: var(--text-muted); }
+.copyright { font-size: 16px; line-height: 24px; font-weight: 300; color: var(--text-muted); }
 
 /* Diagram stacks when its 1106px width no longer fits */
 @media (max-width: 1239px) {
@@ -214,5 +212,4 @@ h2 { line-height: 46px; }
   .spec dl div { grid-template-columns: 1fr; gap: 4px; }
   .faq-column summary { line-height: 24px; }
   .footer-row { flex-direction: column; align-items: flex-start; }
-  .footer-links { gap: 16px 24px; }
 }
