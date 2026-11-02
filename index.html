@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cliav | On-Premise AI Avatars for US Hospitals</title>
-  <meta name="description" content="A full-body AI avatar or hologram for routine patient conversations, on your servers, with no internet or cloud.">
+  <title>Cliav | Air-gapped AI Avatars for Clinics and Hospitals</title>
+  <meta name="description" content="An avatar runs patient intake before the visit. A room device writes the clinical note during it. Both run inside the hospital, so no patient data leaves the building.">
   <link rel="canonical" href="https://cliav.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Cliav | On-Premise AI Avatars for US Hospitals">
-  <meta property="og:description" content="Interactive, real-time, full-body AI avatars, on-premise or fully air-gapped.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cliav">
+  <meta property="og:title" content="Cliav | Air-gapped AI Avatars for Clinics and Hospitals">
+  <meta property="og:description" content="An intake avatar and a room device on hardware inside the hospital. No patient data leaves the building.">
   <meta property="og:image" content="https://cliav.com/assets/img/og/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cliav: Air-gapped AI Avatars for Clinics and Hospitals. No patient data leaves the building.">
   <meta property="og:url" content="https://cliav.com/">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Cliav">
+  <meta name="theme-color" content="#12284c">
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script src="/assets/js/main.js" defer></script>
@@ -22,15 +32,15 @@
 
   <header class="nav">
     <div class="container nav-row">
-      <a class="logo" href="/">Cliav</a>
+      <a class="logo" href="/"><img src="/assets/img/logo/cliav.svg" alt="Cliav" width="81" height="28"></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav-menu" id="nav-menu" aria-label="Main">
         <ul class="nav-links">
           <li><a href="#solution">Solution</a></li>
-          <li><a href="#intake">Intake</a></li>
           <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#intake">Intake</a></li>
           <li><a href="#outcomes">Outcomes</a></li>
           <li><a href="#platform">Platform</a></li>
           <li><a href="#about">About</a></li>
@@ -45,15 +55,21 @@
     <section id="hero" class="hero">
       <div class="container">
         <div class="hero-text">
-          <h1>On-Premise AI Avatars<br>for US Hospitals</h1>
-          <p class="lead">A full-body AI avatar or hologram for routine patient conversations, on your servers, with no internet or cloud. Interactive, real-time, full-body, on-premise or fully air-gapped.</p>
-          <p class="promise">No Patient Data Leaving Your Hospital.</p>
+          <h1>Air-gapped AI Avatars <br>for Clinics and Hospitals</h1>
+          <p class="lead">An avatar that runs the patient intake before the visit. <br>A room device that writes the clinical note during it. <br>Both run on hardware inside the hospital. <br>No patient data leaves the building.</p>
           <div class="buttons">
             <a class="btn btn-primary" href="#contact">Talk to Sales</a>
           </div>
+          <ul class="badges">
+            <li><img src="/assets/img/icons/dot.svg" alt="" width="8" height="8">Runs fully offline</li>
+            <li><img src="/assets/img/icons/dot.svg" alt="" width="8" height="8">Open-weight models</li>
+            <li><img src="/assets/img/icons/dot.svg" alt="" width="8" height="8">FHIR R4 to your EHR</li>
+          </ul>
         </div>
       </div>
-      <div class="ph hero-media" data-slot="v1-hero.webp" aria-hidden="true"></div>
+      <a class="hero-media" href="https://youtu.be/I2F7O8IXPEY" target="_blank" rel="noopener" aria-label="Watch the demo video on YouTube">
+        <img src="/assets/img/sections/v1-hero.jpg" alt="" width="1029" height="690" fetchpriority="high">
+      </a>
     </section>
 
     <section id="problem">
@@ -92,11 +108,11 @@
       <div class="container stack">
         <div class="section-head">
           <h2>What is an on-premise AI avatar for hospitals?</h2>
-          <p class="lead">A real-time, full-body AI avatar that handles the patient conversations that don’t need a clinician, and keeps patient data under your control.</p>
+          <p class="lead">An on-premise AI avatar is a real-time, interactive virtual assistant that runs on your hospital’s own servers. <br>It handles the patient conversations that don’t need a clinician, and patient data stays under your control.</p>
         </div>
         <div class="solution-body">
           <div class="split">
-            <div class="ph ph-video" data-slot="v5-solution.webp" aria-hidden="true"></div>
+            <img class="photo photo-video" src="/assets/img/sections/v5-solution.jpg" alt="A patient talks to a life-size hologram of a clinician in a hospital reception" width="1134" height="638" loading="lazy">
             <ul class="bullets">
               <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p><strong>Real-time voice and video.</strong> A face, a voice, and natural turn taking. Voice only where video isn’t wanted. Runs in the browser, no app to install.</p></li>
               <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p><strong>Any screen a patient meets.</strong> Kiosk in the waiting area, Holobox at the entrance, and web, mobile, or telephone with the on-premise option. One persona on every screen.</p></li>
@@ -109,7 +125,57 @@
       </div>
     </section>
 
-    <section id="intake">
+    <section id="how-it-works">
+      <div class="container stack">
+        <div class="section-head">
+          <h2>Three parts, one system inside your hospital</h2>
+          <p class="lead lead-narrow">Patient intake, clinical notes, and testing often sit with different vendors, or get done by hand. Cliav brings all three into one system your hospital runs itself.</p>
+        </div>
+        <div class="cards">
+          <article class="card part">
+            <p class="part-when">Before the visit</p>
+            <div class="card-title">
+              <img src="/assets/img/icons/intake-avatar.svg" alt="" width="28" height="28">
+              <h3>Intake avatar</h3>
+            </div>
+            <p>A conversational avatar takes the patient through intake at a kiosk, on a screen, or as a hologram.</p>
+            <ul class="bullets">
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Asks the questions your clinic already asks</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Speaks the patient’s language</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Gives the doctor a structured summary</p></li>
+            </ul>
+          </article>
+          <article class="card part">
+            <p class="part-when">During the visit</p>
+            <div class="card-title">
+              <img src="/assets/img/icons/room-device.svg" alt="" width="28" height="28">
+              <h3>Room device</h3>
+            </div>
+            <p>A small device in the consultation room listens, transcribes, and drafts the clinical note on the spot.</p>
+            <ul class="bullets">
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Clinician reviews and approves every note</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Audio stays inside your hospital</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Works with no internet connection</p></li>
+            </ul>
+          </article>
+          <article class="card part">
+            <p class="part-when">Before every release</p>
+            <div class="card-title">
+              <img src="/assets/img/icons/testing-engine.svg" alt="" width="28" height="28">
+              <h3>Testing engine</h3>
+            </div>
+            <p>Each script and note template becomes a test. The engine replays cases and reports changes.</p>
+            <ul class="bullets">
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Catches wrong or missing answers before patients do</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Proof for compliance reviews</p></li>
+              <li><img src="/assets/img/icons/tick.svg" alt="" width="20" height="20"><p>Same engine already used by a government customer</p></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="intake" class="tint">
       <div class="container stack">
         <div class="section-head">
           <h2>Start with intake. Add roles when you’re ready.</h2>
@@ -122,39 +188,10 @@
             <p>It asks every patient the same questions in the same order, and follows up when an answer is unclear.</p>
             <a class="btn btn-primary" href="#contact">Talk to Sales</a>
           </div>
-          <div class="ph ph-intake" data-slot="r1-intake.webp" aria-hidden="true"></div>
+          <img class="photo photo-intake" src="/assets/img/sections/r1-intake.jpg" alt="A patient in headphones completes intake with an avatar on a screen" width="1134" height="640" loading="lazy">
         </div>
         <p class="body-line">The avatars provide information, not medical advice. When a patient needs a clinician, the avatar hands the conversation over to your staff.</p>
         <p class="body-line"><strong>Other roles on the same platform:</strong> Front desk, Navigation, Education, Follow-up, Staff training.</p>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="tint">
-      <div class="container stack">
-        <div class="section-head">
-          <h2>One visit, from intake to final notes</h2>
-          <p class="lead lead-narrow">Each step prepares the next, so the doctor starts informed and the notes are drafted.<br>Clinicians get more time to devote to patients and less time on paperwork.</p>
-        </div>
-        <ol class="cards steps">
-          <li class="step">
-            <div class="ph ph-step" data-slot="v2-step-intake.webp" aria-hidden="true"></div>
-            <span class="step-number">01</span>
-            <h3>Patient completes intake</h3>
-            <p>The avatar takes the patient through your intake form, in their language.</p>
-          </li>
-          <li class="step">
-            <div class="ph ph-step" data-slot="v3-step-summary.webp" aria-hidden="true"></div>
-            <span class="step-number">02</span>
-            <h3>Doctor gets a summary</h3>
-            <p>The summary reaches your system, and the doctor reads it before the visit.</p>
-          </li>
-          <li class="step">
-            <div class="ph ph-step" data-slot="v4-step-notes.webp" aria-hidden="true"></div>
-            <span class="step-number">03</span>
-            <h3>Visit notes get drafted</h3>
-            <p>A device in the room drafts the notes, and the doctor approves them.</p>
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -233,7 +270,7 @@
             </div>
             <div class="d-center">
               <h3>Cliav AI Avatar <span>on a screen, kiosk, or hologram</span></h3>
-              <div class="ph ph-portrait" data-slot="v6-avatar-portrait.webp" aria-hidden="true"></div>
+              <div class="portrait"><img src="/assets/img/sections/v6-avatar-portrait.png" alt="Portrait of a Cliav AI avatar" width="660" height="660" loading="lazy"></div>
             </div>
             <div class="d-behind">
               <h3>Behind the Avatar</h3>
@@ -267,7 +304,7 @@
               </div>
             </div>
           </div>
-          <p class="lead centered">Your IT team controls access, AI models, and updates.</p>
+          <p class="lead centered">Your IT team controls access, AI models, and updates</p>
         </div>
         <div class="options">
           <article class="option">
@@ -278,13 +315,17 @@
             <h3>On-premise</h3>
             <p>Your servers, connected as your IT team allows, for online intake, follow-up, and reminders.</p>
           </article>
-          <article class="option">
-            <h3>Open integration interfaces</h3>
-            <p>REST API, webhooks, WebRTC, and WebSockets.<br>EHR connection is scoped in your pilot.</p>
-          </article>
-          <article class="option">
-            <h3>LLM agnostic</h3>
-            <p>Runs on the language model your hospital approves, including open models on premise, with no vendor lock-in.</p>
+          <article class="option spec">
+            <h3>Technical specification</h3>
+            <dl>
+              <div><dt>Servers</dt><dd>NVIDIA RTX PRO 6000 or DGX class systems, on premises</dd></div>
+              <div><dt>Room devices</dt><dd>Intel edge chips, running speech and note pipelines locally</dd></div>
+              <div><dt>Models</dt><dd>Open-weight speech-to-text, language, and text-to-speech models</dd></div>
+              <div><dt>Avatar rendering</dt><dd>Real-time 3D avatars, rendered on site</dd></div>
+              <div><dt>EHR</dt><dd>FHIR R4 interface, connection scoped in your pilot</dd></div>
+              <div><dt>Interfaces</dt><dd>REST API, webhooks, WebRTC, and WebSockets</dd></div>
+              <div><dt>Compliance</dt><dd>HIPAA attestation and SOC 2 in progress</dd></div>
+            </dl>
           </article>
         </div>
       </div>
@@ -294,44 +335,29 @@
       <div class="container stack">
         <div class="section-head">
           <h2>Who’s behind Cliav</h2>
-          <p class="lead lead-narrow">Cliav is the US line of RAVATAR, whose avatar platform has paying customers in four sectors, including PwC, Capgemini, and AMD.</p>
+          <p class="lead">Cliav runs on an avatar platform with paying customers in four sectors and permanent installations in Florida. <br>A public healthcare IT provider in Italy has used it on subscription since January 2026. Hospitals, universities, and patient organizations in Europe have signed 11 letters of intent.</p>
         </div>
         <div class="cards">
-          <article class="card">
-            <div class="card-title">
-              <img src="/assets/img/icons/built-by-ravatar.svg" alt="" width="28" height="28">
-              <h3>Built by RAVATAR</h3>
+          <article class="card founder">
+            <img class="founder-photo" src="/assets/img/sections/founder-andrii.jpg" alt="Andrii Bidochko" width="88" height="88" loading="lazy">
+            <div>
+              <h3>Andrii Bidochko</h3>
+              <p>Chief Executive Officer</p>
             </div>
-            <p>The avatar platform behind PwC, Capgemini, and AMD projects, with permanent installations in Florida.</p>
           </article>
-          <article class="card">
-            <div class="card-title">
-              <img src="/assets/img/icons/staff.svg" alt="" width="28" height="28">
-              <h3>Paying in healthcare</h3>
+          <article class="card founder">
+            <img class="founder-photo" src="/assets/img/sections/founder-artem.jpg" alt="Artem Synytskyi" width="88" height="88" loading="lazy">
+            <div>
+              <h3>Artem Synytskyi</h3>
+              <p>Chief Technology Officer</p>
             </div>
-            <p>A public healthcare IT provider in Italy has run our avatars on subscription since January 2026.</p>
           </article>
-          <article class="card">
-            <div class="card-title">
-              <img src="/assets/img/icons/letters-of-intent.svg" alt="" width="28" height="28">
-              <h3>Letters of intent</h3>
+          <article class="card founder">
+            <img class="founder-photo" src="/assets/img/sections/founder-oleg.jpg" alt="Oleg Avershyn" width="88" height="88" loading="lazy">
+            <div>
+              <h3>Oleg Avershyn</h3>
+              <p>Chief Marketing Officer</p>
             </div>
-            <p>11 letters of intent from hospitals, universities, and patient organizations in Europe.</p>
-          </article>
-        </div>
-        <h3 class="subhead">Founders</h3>
-        <div class="cards">
-          <article class="card">
-            <div class="card-title"><h4>Andrii Bidochko, CEO</h4></div>
-            <p>Built the agent evaluation engine that a national defense agency runs in a closed network.</p>
-          </article>
-          <article class="card">
-            <div class="card-title"><h4>Artem Synytskyi, CTO</h4></div>
-            <p>Built the on-premise avatar pipeline with Intel, and a clinical notes system for clinics.</p>
-          </article>
-          <article class="card">
-            <div class="card-title"><h4>Oleg Avershyn, CMO</h4></div>
-            <p>Won PwC, Capgemini, and AMD, and signed AVI-SPL as RAVATAR’s US reseller.</p>
           </article>
         </div>
       </div>
@@ -378,23 +404,21 @@
     </section>
 
     <section id="contact" class="cta">
+      <div class="cta-media"><img src="/assets/img/sections/v8-cta.jpg" alt="" width="1280" height="860" loading="lazy"></div>
       <div class="container">
         <div class="cta-text">
           <h2>Ready to keep your AI inside your walls?</h2>
           <p class="lead">Cliav runs on your own servers, with no outside AI API.</p>
-          <div class="buttons">
-            <a class="btn btn-white" href="#contact">Talk to Sales</a>
-          </div>
+          <p class="lead">Drop us an email at <a href="mailto:info@cliav.com">info@cliav.com</a></p>
         </div>
       </div>
-      <div class="cta-media" data-slot="v8-cta.webp" aria-hidden="true"></div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-row">
-        <a class="logo" href="/">Cliav</a>
+        <a class="logo" href="/"><img src="/assets/img/logo/cliav.svg" alt="Cliav" width="81" height="28"></a>
         <ul class="footer-links">
           <li><a href="#contact">Contact</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
