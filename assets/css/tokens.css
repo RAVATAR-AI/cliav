@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
 /* Design tokens — pulled from the Figma variables (Desktop / 1920 Cliav F) */
 :root {
   /* Colors */
@@ -16,6 +18,12 @@
   --gutter: 36px;
   --section-pad: 124px;
 
-  /* Typography — fill in font family/sizes from Figma text styles */
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  /* Radii */
+  --radius-card: 42px;
+  --radius-option: 32px;
+  --radius-faq: 28px;
+  --radius-step: 22px;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
