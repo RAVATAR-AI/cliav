@@ -1,0 +1,21 @@
+/* Design tokens — pulled from the Figma variables (Desktop / 1920 Cliav F) */
+:root {
+  /* Colors */
+  --navy: #12284c;
+  --blue: #2563ae;
+  --white: #ffffff;
+  --text-body: #3d5069;
+  --text-muted: #5a6b82;
+  --mint: #e3f3f1;
+  --bg-blue: #eef5fb;
+  --line: #d5e1ec;
+  --draft: #c2560a; /* used for [Confirm: …] notes in Figma — not for production */
+
+  /* Layout (from Figma: 1170px content column on a 1920 frame) */
+  --container: 1170px;
+  --gutter: 36px;
+  --section-pad: 124px;
+
+  /* Typography — fill in font family/sizes from Figma text styles */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}

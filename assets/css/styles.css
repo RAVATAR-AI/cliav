@@ -1,0 +1,22 @@
+/* Base */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-sans); color: var(--text-body); background: var(--white); }
+img { max-width: 100%; height: auto; display: block; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 16px; }
+section { padding: var(--section-pad) 0; }
+
+/* Sections — one block per Figma frame, in page order */
+/* .nav */
+/* #hero */
+/* #problem */
+/* #solution */
+/* #intake */
+/* #how-it-works */
+/* #outcomes */
+/* #platform */
+/* #about */
+/* #faq */
+/* #contact */
+/* .footer */
