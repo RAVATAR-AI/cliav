@@ -128,15 +128,10 @@ h2 { line-height: 46px; }
 .spec dt { font-weight: 500; color: var(--navy); }
 .spec dd { margin: 0; font-weight: 300; }
 
-/* #about */
-.founder { flex-direction: row; align-items: center; gap: 24px; }
-.founder-photo { flex: none; width: 88px; height: 88px; border-radius: 50%; }
-.founder p { margin-top: 4px; font-size: 16px; }
-
 /* #faq */
 .faq-columns { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gutter); align-items: start; }
 .faq-column { display: flex; flex-direction: column; gap: 16px; }
-.faq-column details { padding: 24px; border-radius: var(--radius-faq); background: var(--white); }
+.faq-column details { padding: 24px; border-radius: var(--radius-faq); background: var(--bg-blue); }
 .faq-column summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 20px; font-size: 18px; line-height: 18px; font-weight: 600; color: var(--navy); cursor: pointer; list-style: none; }
 .faq-column summary::-webkit-details-marker { display: none; }
 .faq-column summary img { flex: none; margin-right: 6px; transform: rotate(90deg); transition: transform .15s; }
