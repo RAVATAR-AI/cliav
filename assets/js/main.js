@@ -16,4 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') setOpen(false);
   });
+
+  // Demo video modal. Native <dialog> traps focus and closes on Escape.
+  const modal = document.querySelector('.video-modal');
+  const video = modal.querySelector('video');
+
+  document.querySelectorAll('[data-video-open]').forEach((button) => {
+    button.addEventListener('click', () => {
+      modal.showModal();
+      video.play().catch(() => {});
+    });
+  });
+  modal.querySelector('.video-close').addEventListener('click', () => modal.close());
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) modal.close();
+  });
+  // Pause however the dialog closes (button, backdrop, Escape). Watching the open
+  // attribute is more dependable than the dialog's close event.
+  new MutationObserver(() => {
+    if (!modal.open) video.pause();
+  }).observe(modal, { attributes: true, attributeFilter: ['open'] });
 });
