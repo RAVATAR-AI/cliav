@@ -34,6 +34,8 @@ assets/
    - Apex `cliav.com`: A records → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `www`: CNAME → `ravatar-ai.github.io`
 
+Pages caches files for 10 minutes. The CSS and JS links in every HTML page end in `?v=YYYYMMDD`; change that number whenever `assets/css` or `assets/js` changes, so browsers never pair a new page with an old cached stylesheet.
+
 ## Run locally
 
 ```

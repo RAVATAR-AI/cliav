@@ -235,3 +235,9 @@ html:has(.video-modal[open]) { overflow: hidden; }
   .faq-column summary { line-height: 24px; }
   .footer-row { flex-direction: column; align-items: flex-start; }
 }
+
+/* Small phones: every button stacks at full width */
+@media (max-width: 390px) {
+  .buttons { flex-direction: column; gap: 16px; }
+  .btn { align-self: stretch; }
+}
